@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tic_tac_toe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='game.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        /*.container{
+            height: 100%;
+            width: 100%;
+        }
+        .confetti {
+          width: 10px;
+          height: 10px;
+          background-color: #f2d74e;
+          position: absolute;
+          left: 50%;
+          animation: confetti 5s ease-in-out -2s infinite;
+          transform-origin: left top;
+        }
+        .confetti:nth-child(1){
+            background-color: #a864fd;
+            left: 10%;
+            animation-delay: 0;
+        }
+        .confetti:nth-child(2){
+            background-color: #29cdff;
+            left: 20%;
+            animation-delay: -5s;
+        }
+        .confetti:nth-child(3){
+            background-color: #78ff44;
+            left: 30%;
+            animation-delay: -3s;
+        }
+        .confetti:nth-child(4){
+            background-color: #ff718d;
+            left: 40%;
+            animation-delay: -2.5s;
+        }
+        .confetti:nth-child(5){
+            background-color: #fdff6a;
+            left: 50%;
+            animation-delay: -4s;
+        }
+        .confetti:nth-child(6){
+            background-color: #ff718d;
+            left: 60%;
+            animation-delay: -6s;
+        }
+        .confetti:nth-child(7){
+            background-color: #a864fd;
+            left: 70%;
+            animation-delay: -1.5s;
+        }
+        .confetti:nth-child(8){
+            background-color: #78ff44;
+            left: 80%;
+            animation-delay: -2s;
+        }
+        .confetti:nth-child(9){
+            background-color: #f2d74e;
+            left: 90%;
+            animation-delay: -3.5s;
+        }
+        .confetti:nth-child(10){
+            background-color: #29cdff;
+            left: 100%;
+            animation-delay: -2.5s;
+        }
+
+        @keyframes confetti {
+          0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+          25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+          50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+          75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+          100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+        }*/
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+
+    </div>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>Player <span id="player"></span></h2>
+    <div id="bo">
+        <button id="but">start</button> <button id="but2">play again!</button>
+        <h3 id="alert">may the best win!</h3>
+    </div>
+    <div class="al">
+        <div class="score1">
+            <table>
+                <tr>
+
+                    <th>player1</th>
+                </tr>
+                <tr>
+
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contain">
+
+            <div id="0" class="box one">
+                <p></p>
+            </div>
+            <div id="1" class="box">
+                <p></p>
+            </div>
+            <div id="2" class="box">
+                <p></p>
+            </div>
+
+            <div id="3" class="box one">
+                <p></p>
+            </div>
+            <div id="4" class="box">
+                <p></p>
+            </div>
+            <div id="5" class="box">
+                <p></p>
+            </div>
+
+
+            <div id="6" class="box one">
+                <p></p>
+            </div>
+            <div id="7" class="box">
+                <p></p>
+            </div>
+            <div id="8" class="box">
+                <p></p>
+            </div>
+
+        </div>
+        <div class="score2">
+            <table>
+                <tr>
+
+                    <th>player2</th>
+                </tr>
+                <tr>
+
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src='game.js'></script>
+
+</body>
+
+</html>
