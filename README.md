@@ -1,1 +1,1 @@
-# TicTacToe.github.io
+# TicTacToe
