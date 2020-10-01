@@ -12,7 +12,7 @@ var player2 = 0;
 document.getElementById('but').addEventListener('click', function () {
     p1 = true;
     document.getElementById('player').innerHTML = '1';
-    document.getElementById('alert').innerHTML = "may the best win!";
+    document.getElementById('alert').innerHTML = "May the best win!";
     start = true;
 })
 
@@ -65,7 +65,7 @@ document.getElementById('0').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('1').addEventListener('click', function () {
@@ -83,7 +83,7 @@ document.getElementById('1').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('2').addEventListener('click', function () {
@@ -101,7 +101,7 @@ document.getElementById('2').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('3').addEventListener('click', function () {
@@ -119,7 +119,7 @@ document.getElementById('3').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('4').addEventListener('click', function () {
@@ -137,7 +137,7 @@ document.getElementById('4').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('5').addEventListener('click', function () {
@@ -155,7 +155,7 @@ document.getElementById('5').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('6').addEventListener('click', function () {
@@ -173,7 +173,7 @@ document.getElementById('6').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('7').addEventListener('click', function () {
@@ -193,7 +193,7 @@ document.getElementById('7').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 document.getElementById('8').addEventListener('click', function () {
@@ -213,7 +213,7 @@ document.getElementById('8').addEventListener('click', function () {
     }
 }
 else{
-    document.getElementById('alert').innerHTML = "Please start the game!"
+    document.getElementById('alert').innerHTML = "Please click the start button!"
 }
 })
 
@@ -222,14 +222,14 @@ function wincheck() {
     if ((arr[0] == 'x' && arr[1] == 'x' && arr[2] == 'x') || (arr[3] == 'x' && arr[4] == 'x' && arr[5] == 'x') || (arr[6] == 'x' && arr[7] == 'x' && arr[8] == 'x') || (arr[0] == 'x' && arr[3] == 'x' && arr[6] == 'x') || (arr[1] == 'x' && arr[4] == 'x' && arr[7] == 'x') || (arr[2] == 'x' && arr[5] == 'x' && arr[8] == 'x') || (arr[0] == 'x' && arr[4] == 'x' && arr[8] == 'x') || (arr[2] == 'x' && arr[4] == 'x' && arr[6] == 'x')) {
         win = true;
         gameover = true;
-        document.getElementById('alert').innerHTML = "Player 1 won!"
+        document.getElementById('alert').innerHTML = "Player 1 won! 🎉🎉"
         player1++;
         document.getElementsByTagName('td')[0].innerHTML = player1;
     }
     if ((arr[0] == 'o' && arr[1] == 'o' && arr[2] == 'o') || (arr[3] == 'o' && arr[4] == 'o' && arr[5] == 'o') || (arr[6] == 'o' && arr[7] == 'o' && arr[8] == 'o') || (arr[0] == 'o' && arr[3] == 'o' && arr[6] == 'o') ||  (arr[1] == 'o' && arr[4] == 'o' && arr[7] == 'o') || (arr[2] == 'o' && arr[5] == 'o' && arr[8] == 'o') || (arr[0] == 'o' && arr[4] == 'o' && arr[8] == 'o') || (arr[2] == 'o' && arr[4] == 'o' && arr[6] == 'o')) {
         win = true;
         gameover = true;
-        document.getElementById('alert').innerHTML = "Player 2 won!"
+        document.getElementById('alert').innerHTML = "Player 2 won! 🎉🎉"
         player2++;
         document.getElementsByTagName('td')[1].innerHTML = player2;
     }
@@ -246,7 +246,7 @@ function reset() {
     win = false;
     gameover = false;
     start = false;
-    document.getElementById('alert').innerHTML = "may the best win!";
+    document.getElementById('alert').innerHTML = "May the best win!";
     document.getElementById('player').innerHTML = '';
     for (var i = 0; i < document.getElementsByTagName('p').length; i++) {
         document.getElementsByTagName('p')[i].innerHTML = '';
